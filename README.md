@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/cybsafe/phishtray.svg?branch=master)](https://travis-ci.com/cybsafe/phishtray)
 [![Coverage Status](https://coveralls.io/repos/github/cybsafe/phishtray/badge.svg?branch=master)](https://coveralls.io/github/cybsafe/phishtray?branch=master)
 
-# Running The Demo
+# Running The Demo in Windows only.
 
 0. make sure you've completed the prereqs
 1. Navigate to http://phishtray.local:9000/admin and create an Exercise with emails
