@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+
+  phishtray_db:
+    image: mysql:5.7
+    volumes:
+    - ./db:/var/lib/mysql
+    ports:
+    - "9306:3306"
+    environment:
+    - MYSQL_ROOT_PASSWORD=admin
+    - MYSQL_DATABASE=phishtray
+    networks:
+    - webnet
+
+  phishtray_apps:
+    build:
+      context: ../..
+      dockerfile: prod.Dockerfile
+    ports:
+    - "9000:9000"
+    - "9022:22"
+    environment:
+    - DATABASE_HOST=phishtray_db
+    networks:
+    - webnet
+    depends_on:
+    - phishtray_db
+
+networks:
+  webnet:
