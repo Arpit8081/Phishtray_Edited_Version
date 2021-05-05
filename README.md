@@ -4,12 +4,6 @@
 
 # This Files only run in Windows OS.
 
-0. make sure you've completed the prereqs
-1. Navigate to http://phishtray.local:9000/admin and create an Exercise with emails
-1. Copy the exercise UUID
-1. In your local terminal, from the phishtray folder, `cd frontend` and `yarn start`
-1. Navigate to http://phishtray.local:3000/welcome/<exercise:uuid>/ to start the exercise
-
 
 # Phishtray Installation
 
@@ -46,3 +40,12 @@ then run the following test command `py3 manage.py test`
 
 ## Working Within The Container
 Within the container you should use Python 3 which can be called via `py3` or `python3.6` commands, `python` refers to Python 2.7 which is the system default. 
+
+# project run
+
+
+0. make sure you've completed the prereqs
+1. Navigate to http://phishtray.local:9000/admin and create an Exercise with emails
+1. Copy the exercise UUID
+1. In your local terminal, from the phishtray folder, `cd frontend` and `yarn start`
+1. Navigate to http://phishtray.local:3000/welcome/<exercise:uuid>/ to start the exercise
