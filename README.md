@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.com/cybsafe/phishtray.svg?branch=master)](https://travis-ci.com/cybsafe/phishtray)
 [![Coverage Status](https://coveralls.io/repos/github/cybsafe/phishtray/badge.svg?branch=master)](https://coveralls.io/github/cybsafe/phishtray?branch=master)
 
-# Running The Demo in Windows only.
+# This Files only run in Windows OS.
 
 0. make sure you've completed the prereqs
 1. Navigate to http://phishtray.local:9000/admin and create an Exercise with emails
@@ -21,7 +21,12 @@
 
         # Phishtray
         127.0.0.1               phishtray.local
-3. Create two env files in the frontend. One called `.env.development.local` and the other called `.env.local`. You should then ask one of the devs for the content of the files.
+3. Create two env files in the frontend. One called `.env.development.local` and the other called `.env.local`. Then you should have to Write/Copy and Paste below content in both the files.  
+
+REACT_APP_HOST_BACKEND=http://phishtray.local:9000
+REACT_APP_HOST_FRONTEND=http://phishtray.local:3000
+REACT_APP_NAME=Emtray
+
 
 ## Install
 1. Go into the local docker directory `cd docker/local`
