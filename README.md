@@ -41,7 +41,7 @@ then run the following test command `py3 manage.py test`
 ## Working Within The Container
 Within the container you should use Python 3 which can be called via `py3` or `python3.6` commands, `python` refers to Python 2.7 which is the system default. 
 
-# project run
+# Run the project
 
 
 0. make sure you've completed the prereqs
