@@ -10,11 +10,12 @@
 
 ## Prerequisites
 
-1. Install `docker` & `docker compose` - https://docs.docker.com/install/
-2. Add the following to your `hosts` file:
+1. Install `docker` - https://docs.docker.com/install/
+2. Copy the following lines to your `hosts` file: You can find `hosts` file in `C:\Windows\System32\drivers\etc`. If you can not find `hosts` file then search in C drive `hosts`.
 
         # Phishtray
         127.0.0.1               phishtray.local
+
 3. Create two env files in the frontend folder. One called `.env.development.local` and the other called `.env.local`. Then you should have to Write/Copy and Paste below content in both the files.  
 
         REACT_APP_HOST_BACKEND=http://phishtray.local:9000
@@ -22,7 +23,8 @@
         REACT_APP_NAME=Emtray
 
 
-## Install
+## Install directory in your file. 
+0. Open Terminal in Visual Studio Code. 
 1. Go into the local docker directory `cd docker/local`
 2. Build and bring up the images running `docker-compose up -d --build`
 3. Bash in to the django container using `docker-compose exec django bash`  
