@@ -21,7 +21,7 @@
 
         # Phishtray
         127.0.0.1               phishtray.local
-3. Create two env files in the frontend. One called `.env.development.local` and the other called `.env.local`. Then you should have to Write/Copy and Paste below content in both the files.  
+3. Create two env files in the frontend folder. One called `.env.development.local` and the other called `.env.local`. Then you should have to Write/Copy and Paste below content in both the files.  
 
         REACT_APP_HOST_BACKEND=http://phishtray.local:9000
         REACT_APP_HOST_FRONTEND=http://phishtray.local:3000
