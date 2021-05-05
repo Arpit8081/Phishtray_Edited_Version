@@ -1,7 +1,7 @@
 // @flow
 import React, { Fragment, useState, Component } from 'react';
 import { connect } from 'react-redux';
-import Popup from 'reactjs-popup';
+//import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import styled, { css } from 'react-emotion';
 import { Link } from 'react-router-dom';
@@ -9,18 +9,18 @@ import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import CustomMarkdown from '../../../components/Markdown/CustomMarkdown';
-import { withRouter } from 'react-router-dom';
+//import { withRouter } from 'react-router-dom';
 import EmailCard from './EmailCard';
 import QuickReply from './QuickReply';
-import { Button, /*Header,*/ Modal } from 'carbon-components-react';
+//import { Button, /*Header,*/ Modal } from 'carbon-components-react';
 import { logAction, selectWebpageType } from '../../../utils';
 import actionTypes from '../../../config/actionTypes';
 import { loadFiles } from '../../../actions/fileManagerActions';
 import { showWebpage } from '../../../actions/uiActions';
-import { reduce } from 'carbon-icons';
+//import { reduce } from 'carbon-icons';
 
 
-const confirmationProps = {
+/*const confirmationProps = {
   shouldSubmitOnEnter: false,
   modalHeading: 'Confirm Exit',
   primaryButtonText: 'Yes, I would like to Exit',
@@ -31,7 +31,7 @@ const ConfirmationModal = ({ visible, ...rest }) => (
   <Modal {...confirmationProps} open={visible} {...rest}>
     <p className="bx--modal-content__text">Are you sure you want to exit?</p>
   </Modal>
-);
+);*/
 type Props = {
   email: Object,
   onReplyParams: Object,
@@ -79,7 +79,7 @@ const FromAccountInitials = styled('div')({
   fontSize: '2rem',
 });
 /// My code
-const buttonProps = {
+/*const buttonProps = {
   className: css({ display: 'flex', flexGrow: 1, marginTop: '20px' }),
   id: 'test2',
   kind: 'secondary',
@@ -87,7 +87,7 @@ const buttonProps = {
 const ButtonContainer = styled('div')({
   flex: 1,
   maxWidth: '500px',
-});
+});*/
 
 
 const EmailFieldInnerContainer = styled('div')`
@@ -411,7 +411,7 @@ function ReturnReplies({ props, items }) {
   );
 }
 
-class Header extends Component<Props> {
+/*class Header extends Component<Props> {
   state = {
     modalOpen: false,
   };
@@ -425,7 +425,7 @@ class Header extends Component<Props> {
     </div>
     );
   }
-}
+}*/
 
 const Email = (props: Props) => {
   const active = props.threads.filter(
@@ -486,9 +486,16 @@ export default connect(
     exercise: state.exercise,
   }),
   { showWebpage, loadFiles }
-)(Email, Header);
+)(Email,/* Header*/);
 
-    
+/*
+
+JavaScrpit (React) code.
+
+If you want to add anything in code file you need to find in google like
+
+"How to add popup menu in React"....
+
     /*  
 
     How to add Popup menu in website.
@@ -529,7 +536,7 @@ Similar messages were used to steal people's personal information. Avoid clickin
 
   */
 
-// Database Code
+// Database Code (Mark Down Language)
 
 /*
 
@@ -558,4 +565,20 @@ Similar messages were used to steal people's personal information. Avoid clickin
 
 <br />
 
+*/
+
+/*
+This line code insert image. just replace https:// line with your image link. 
+Home › Exercise › Exercise web pages › 
+[![Foo](https://s3.amazonaws.com/utep-uploads/wp-content/uploads/sparkle-box/2019/04/30112737/Female-CEO-500x333.jpg)]()
+*/
+
+/*
+Basic Syntax for the MarkDown Language:
+
+https://www.markdownguide.org/basic-syntax/
+
+OR
+
+You can search online. Also, you can add HTML code.
 */
