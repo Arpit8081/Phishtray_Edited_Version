@@ -36,9 +36,10 @@ then create a superuser `py3 manage.py createsuperuser --email your@email.here`
 
 0. make sure you've completed the prereqs
 1. Navigate to http://phishtray.local:9000/admin and create an Exercise with emails
-2. Copy the exercise UUID
-3. In your local terminal, from the phishtray folder, `cd frontend` and `yarn start`
-4. Navigate to http://phishtray.local:3000/welcome/<exercise:uuid>/ to start the exercise
+2. You can find UUID here http://phishtray.local:9000/admin/exercise/exercise/
+3. Copy the exercise UUID
+4. In your local terminal, from the phishtray folder, `cd frontend` and `yarn start`
+5. Navigate to http://phishtray.local:3000/welcome/<exercise:uuid>/ to start the exercise
 
 # Extra steps Only for testing.
 
