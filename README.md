@@ -31,6 +31,17 @@
 then create a superuser `py3 manage.py createsuperuser --email your@email.here`
 4. Run the static files command `py3 manage.py collectstatic`
 
+# Run the project
+
+
+0. make sure you've completed the prereqs
+1. Navigate to http://phishtray.local:9000/admin and create an Exercise with emails
+2. Copy the exercise UUID
+3. In your local terminal, from the phishtray folder, `cd frontend` and `yarn start`
+4. Navigate to http://phishtray.local:3000/welcome/<exercise:uuid>/ to start the exercise
+
+# Extra steps Only for testing.
+
 ## Running tests
 Run bash inside the django container using `docker-compose exec django bash`
 then run the following test command `py3 manage.py test`
@@ -43,11 +54,4 @@ then run the following test command `py3 manage.py test`
 ## Working Within The Container
 Within the container you should use Python 3 which can be called via `py3` or `python3.6` commands, `python` refers to Python 2.7 which is the system default. 
 
-# Run the project
-
-
-0. make sure you've completed the prereqs
-1. Navigate to http://phishtray.local:9000/admin and create an Exercise with emails
-1. Copy the exercise UUID
-1. In your local terminal, from the phishtray folder, `cd frontend` and `yarn start`
-1. Navigate to http://phishtray.local:3000/welcome/<exercise:uuid>/ to start the exercise
+## If you need any help contact me or put comment.
